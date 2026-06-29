@@ -156,6 +156,35 @@ export default function ThietKeWebsitePage() {
           </div>
         </section>
 
+        {/* PORTFOLIO - WEBSITE ĐÃ LÀM */}
+        <section className="py-16 relative" style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <p className="text-sm uppercase tracking-wider font-bold mb-2" style={{ color: "#00D4C8" }}>Portfolio thực tế</p>
+              <h2 className="text-2xl font-black text-white">Website INEXT GROUP đã thiết kế</h2>
+              <p className="mt-2 text-sm" style={{ color: "rgba(232,238,255,0.5)" }}>Một số dự án đã bàn giao cho khách hàng thực tế</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {[
+                { src: "/images/pptx_image40.jpeg", label: "Mew Yummy – Hải Sản Tươi Sống", color: "#00D4C8" },
+                { src: "/images/pptx_image41.jpeg", label: "Bách Hoá Tổng Hợp Online", color: "#0095F5" },
+                { src: "/images/pptx_image42.jpeg", label: "VinaGreen – Than Đước Xuất Khẩu", color: "#FFB300" },
+              ].map((site) => (
+                <div key={site.src} className="rounded-2xl overflow-hidden group cursor-pointer"
+                  style={{ border: `1px solid ${site.color}25`, boxShadow: `0 0 20px ${site.color}08`, transition: "all 0.3s" }}>
+                  <div className="overflow-hidden">
+                    <Image src={site.src} alt={site.label} width={600} height={400} className="w-full object-cover object-top transition-transform duration-500 group-hover:scale-105" unoptimized />
+                  </div>
+                  <div className="p-4" style={{ background: "rgba(255,255,255,0.02)" }}>
+                    <p className="text-sm font-bold text-white">{site.label}</p>
+                    <p className="text-xs mt-1" style={{ color: site.color }}>Website doanh nghiệp</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* PRICING SHEET IMAGE */}
         <section className="py-12 relative" style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -164,7 +193,7 @@ export default function ThietKeWebsitePage() {
               <h2 className="text-xl font-black text-white">Minh bạch — Không phát sinh ẩn</h2>
             </div>
             <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(0,212,200,0.2)", boxShadow: "0 0 40px rgba(0,149,245,0.1)" }}>
-              <Image src="/images/p10_img3.jpeg" alt="Bảng báo giá thiết kế website INEXT GROUP" width={900} height={1200} className="w-full object-cover" />
+              <Image src="/images/pptx_image39.jpeg" alt="Bảng báo giá thiết kế website INEXT GROUP" width={900} height={1200} className="w-full object-cover" unoptimized />
             </div>
             <p className="text-center text-xs mt-3" style={{ color: "rgba(232,238,255,0.35)" }}>Liên hệ để được tư vấn và nhận báo giá phù hợp với nhu cầu của bạn</p>
           </div>

@@ -136,7 +136,7 @@ export default function TheVipPage() {
                 <div className="relative w-full max-w-sm">
                   <div className="absolute -inset-6 rounded-full" style={{ background: "rgba(255,179,0,0.08)", filter: "blur(40px)" }} />
                   <div className="relative rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(255,179,0,0.3)", boxShadow: "0 0 40px rgba(255,179,0,0.15)" }}>
-                    <Image src="/images/p08_img2.png" alt="Thẻ VIP NFC Quét Quanh Đây" width={480} height={300} className="w-full object-cover" />
+                    <Image src="/images/pptx_image33.png" alt="Thẻ VIP NFC Quét Quanh Đây" width={600} height={380} className="w-full object-cover" unoptimized />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.5) 0%, transparent 60%)" }} />
                     <div className="absolute bottom-3 left-3 right-3 text-center">
                       <span className="px-3 py-1.5 rounded-full text-xs font-bold" style={{ background: "rgba(255,179,0,0.2)", border: "1px solid rgba(255,179,0,0.4)", color: "#FFB300" }}>
@@ -288,6 +288,33 @@ export default function TheVipPage() {
                 <p className="text-xs text-center mt-4" style={{ color: "rgba(232,238,255,0.35)" }}>
                   * Chỉ áp dụng cho đối tác đã ký kết với INEXT GROUP
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PARTNER PHOTOS */}
+        <section className="py-14 relative" style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <p className="text-sm uppercase tracking-wider font-bold mb-1" style={{ color: "#FFB300" }}>Đối tác thực tế</p>
+              <h2 className="text-xl font-black text-white">Hình ảnh đối tác chấp nhận thẻ VIP</h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="rounded-2xl overflow-hidden relative" style={{ border: "1px solid rgba(255,179,0,0.2)" }}>
+                <Image src="/images/pptx_image60.jpeg" alt="Đối tác cà phê chấp nhận thẻ VIP" width={400} height={350} className="w-full object-cover" style={{ maxHeight: "280px" }} unoptimized />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.75) 0%, transparent 60%)" }} />
+                <p className="absolute bottom-3 left-3 text-sm font-bold text-white">Đối tác cà phê · Thẻ VIP giảm giá</p>
+              </div>
+              <div className="rounded-2xl overflow-hidden relative" style={{ border: "1px solid rgba(255,179,0,0.2)" }}>
+                <Image src="/images/pptx_image55.jpeg" alt="Đối tác giáo dục chấp nhận thẻ VIP" width={400} height={350} className="w-full object-cover" style={{ maxHeight: "280px" }} unoptimized />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.75) 0%, transparent 60%)" }} />
+                <p className="absolute bottom-3 left-3 text-sm font-bold text-white">Khôi Minh Education · Đối tác VIP</p>
+              </div>
+              <div className="rounded-2xl overflow-hidden relative" style={{ border: "1px solid rgba(0,149,245,0.2)" }}>
+                <Image src="/images/pptx_image34.jpeg" alt="Danh thiếp NFC Du Thế Vinh CEO INEXT GROUP" width={400} height={350} className="w-full object-cover" style={{ maxHeight: "280px" }} unoptimized />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.75) 0%, transparent 60%)" }} />
+                <p className="absolute bottom-3 left-3 text-sm font-bold text-white">Danh thiếp NFC · CEO INEXT GROUP</p>
               </div>
             </div>
           </div>

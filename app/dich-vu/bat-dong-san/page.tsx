@@ -80,9 +80,9 @@ export default function BatDongSanPage() {
               {/* BDS screenshots */}
               <div className="relative space-y-4">
                 <div className="absolute -inset-6 rounded-3xl" style={{ background: "rgba(0,149,245,0.04)", filter: "blur(40px)" }} />
-                {/* Main BDS map */}
+                {/* Main BDS map - CaMau.Tv real map */}
                 <div className="relative rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(0,149,245,0.2)", boxShadow: "0 0 30px rgba(0,149,245,0.1)" }}>
-                  <Image src="/images/p09_img1.jpeg" alt="Bản đồ số bất động sản Cà Mau" width={700} height={280} className="w-full object-cover" />
+                  <Image src="/images/pptx_image36.jpeg" alt="CaMau.Tv bản đồ bất động sản Cà Mau" width={700} height={280} className="w-full object-cover" unoptimized />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.5) 0%, transparent 50%)" }} />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                     <span className="px-2.5 py-1 rounded-full text-xs font-bold" style={{ background: "rgba(0,149,245,0.15)", border: "1px solid rgba(0,149,245,0.3)", color: "#0095F5" }}>
@@ -93,13 +93,13 @@ export default function BatDongSanPage() {
                     </span>
                   </div>
                 </div>
-                {/* Two smaller screenshots */}
+                {/* Signage + map */}
                 <div className="grid grid-cols-2 gap-3">
                   <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
-                    <Image src="/images/p09_img2.jpeg" alt="Tin đăng bất động sản" width={340} height={180} className="w-full object-cover" />
+                    <Image src="/images/pptx_image38.jpeg" alt="Biển nhà đất bán QuetQuanhDay" width={340} height={180} className="w-full object-cover" unoptimized />
                   </div>
                   <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.08)" }}>
-                    <Image src="/images/p09_img3.jpeg" alt="Chi tiết bất động sản" width={340} height={180} className="w-full object-cover" />
+                    <Image src="/images/pptx_image37.jpeg" alt="Biển cho thuê QuetQuanhDay" width={340} height={180} className="w-full object-cover" unoptimized />
                   </div>
                 </div>
               </div>
@@ -146,6 +146,28 @@ export default function BatDongSanPage() {
                   <p className="text-sm leading-relaxed" style={{ color: "rgba(232,238,255,0.55)" }}>{f.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* DỊCH VỤ KÝ GỬI THỰC TẾ */}
+        <section className="py-16 relative" style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <p className="text-sm uppercase tracking-wider font-bold mb-2" style={{ color: "#A764F5" }}>Dịch vụ thực tế</p>
+              <h2 className="text-2xl font-black text-white">Ký gửi & Đăng tin BĐS</h2>
+              <p className="mt-2 text-sm" style={{ color: "rgba(232,238,255,0.5)" }}>Giải pháp bán nhà, cho thuê và ký gửi tất cả trên Quét Quanh Đây</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(167,100,245,0.2)", boxShadow: "0 0 20px rgba(167,100,245,0.08)" }}>
+                <Image src="/images/pptx_image10.jpeg" alt="Ký gửi nhà đất miễn phí" width={400} height={500} className="w-full object-cover" unoptimized />
+              </div>
+              <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(0,149,245,0.2)", boxShadow: "0 0 20px rgba(0,149,245,0.08)" }}>
+                <Image src="/images/pptx_image11.jpeg" alt="Đăng tin BĐS 360.000đ" width={400} height={500} className="w-full object-cover" unoptimized />
+              </div>
+              <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(255,179,0,0.2)", boxShadow: "0 0 20px rgba(255,179,0,0.08)" }}>
+                <Image src="/images/p09_img1.jpeg" alt="Bản đồ BDS Cà Mau thực tế" width={400} height={500} className="w-full object-cover" unoptimized />
+              </div>
             </div>
           </div>
         </section>

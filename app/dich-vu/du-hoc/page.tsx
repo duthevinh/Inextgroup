@@ -118,33 +118,45 @@ export default function DuHocPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {/* Airport group photo */}
               <div className="rounded-2xl overflow-hidden relative" style={{ border: "1px solid rgba(167,100,245,0.2)", boxShadow: "0 0 30px rgba(167,100,245,0.08)" }}>
-                <Image src="/images/p12_img3.jpeg" alt="Đoàn học viên xuất cảnh du học Hàn Quốc" width={700} height={450} className="w-full object-cover" />
+                <Image src="/images/pptx_image45.jpeg" alt="Đoàn học viên xuất cảnh du học Hàn Quốc tại sân bay" width={700} height={450} className="w-full object-cover" unoptimized />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.65) 0%, transparent 50%)" }} />
                 <div className="absolute bottom-4 left-4 right-4">
                   <p className="text-sm font-bold text-white">Đoàn học viên xuất cảnh du học Hàn Quốc</p>
-                  <p className="text-xs mt-1" style={{ color: "rgba(232,238,255,0.6)" }}>Tư vấn bởi đối tác của INEXT GROUP</p>
+                  <p className="text-xs mt-1" style={{ color: "rgba(232,238,255,0.6)" }}>EI Group · Tập đoàn Giáo Dục và Đầu Tư</p>
                 </div>
               </div>
-              {/* School visit */}
+              {/* Ceremony photo */}
               <div className="rounded-2xl overflow-hidden relative" style={{ border: "1px solid rgba(167,100,245,0.2)", boxShadow: "0 0 30px rgba(167,100,245,0.08)" }}>
-                <Image src="/images/p12_img5.jpeg" alt="Tư vấn du học tại trường THPT Giá Rai, Cà Mau" width={700} height={450} className="w-full object-cover" />
+                <Image src="/images/pptx_image48.jpeg" alt="Lễ trao visa du học Korea" width={700} height={450} className="w-full object-cover" unoptimized />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.65) 0%, transparent 50%)" }} />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-sm font-bold text-white">Tư vấn du học tại trường THPT Giá Rai</p>
-                  <p className="text-xs mt-1" style={{ color: "rgba(232,238,255,0.6)" }}>Cà Mau — Chương trình tư vấn học đường</p>
+                  <p className="text-sm font-bold text-white">Lễ trao visa du học Korea</p>
+                  <p className="text-xs mt-1" style={{ color: "rgba(232,238,255,0.6)" }}>Lễ trao tổng kết — học viên nhận hoa và passport</p>
                 </div>
               </div>
             </div>
             {/* Additional photos */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4">
               {[
-                { src: "/images/p12_img4.jpeg", alt: "Tư vấn du học nhóm" },
-                { src: "/images/p12_img6.jpeg", alt: "Học viên trước khi xuất cảnh" },
-                { src: "/images/p12_img7.jpeg", alt: "Hoạt động tư vấn du học" },
-                { src: "/images/p13_img2.jpeg", alt: "INEXT GROUP tại hội chợ" },
+                { src: "/images/pptx_image45.jpeg", alt: "Đoàn học viên du học Hàn Quốc tại sân bay" },
+                { src: "/images/pptx_image48.jpeg", alt: "Lễ trao visa du học Korea" },
+                { src: "/images/pptx_image46.jpeg", alt: "Tư vấn tại THPT Tắc Vân, Cà Mau" },
+                { src: "/images/pptx_image47.jpeg", alt: "Tư vấn tại THPT Giá Rai, Cà Mau" },
               ].map((img) => (
                 <div key={img.src} className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
-                  <Image src={img.src} alt={img.alt} width={300} height={200} className="w-full h-32 object-cover" />
+                  <Image src={img.src} alt={img.alt} width={300} height={200} className="w-full h-36 object-cover" unoptimized />
+                </div>
+              ))}
+            </div>
+            {/* Extra photos row */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+              {[
+                { src: "/images/pptx_image49.jpeg", alt: "Giới thiệu chương trình du học tại trường" },
+                { src: "/images/p12_img4.jpeg", alt: "Tư vấn du học nhóm" },
+                { src: "/images/p12_img6.jpeg", alt: "Học viên trước khi xuất cảnh" },
+              ].map((img) => (
+                <div key={img.src} className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
+                  <Image src={img.src} alt={img.alt} width={400} height={250} className="w-full h-40 object-cover" unoptimized />
                 </div>
               ))}
             </div>

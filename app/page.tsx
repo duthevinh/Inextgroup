@@ -342,6 +342,55 @@ export default function HomePage() {
         {/* TESTIMONIALS */}
         <TestimonialsSection />
 
+        {/* HOẠT ĐỘNG THỰC TẾ */}
+        <section className="py-20 relative" style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <p className="text-sm uppercase tracking-wider font-bold mb-2" style={{ color: "#0095F5" }}>Hình ảnh thực tế</p>
+              <h2 className="text-3xl font-black text-white">INEXT GROUP trên thực địa</h2>
+              <p className="mt-2" style={{ color: "rgba(232,238,255,0.5)" }}>Hoạt động, sự kiện và đội ngũ INEXT GROUP tại Cà Mau</p>
+            </div>
+            {/* Main large photo */}
+            <div className="rounded-2xl overflow-hidden relative mb-5" style={{ border: "1px solid rgba(0,149,245,0.2)", boxShadow: "0 0 40px rgba(0,149,245,0.1)" }}>
+              <Image src="/images/pptx_image61.jpeg" alt="INEXT GROUP tại hội chợ triển lãm Cà Mau" width={1400} height={600} className="w-full object-cover" style={{ maxHeight: "400px" }} unoptimized />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.7) 0%, transparent 60%)" }} />
+              <div className="absolute bottom-6 left-6 right-6">
+                <p className="text-lg font-black text-white mb-1">INEXT GROUP tại hội chợ triển lãm tỉnh Cà Mau</p>
+                <p className="text-sm" style={{ color: "rgba(232,238,255,0.7)" }}>Quét Quanh Đây — Cà Mau Trong Tầm Tay Bạn</p>
+              </div>
+            </div>
+            {/* Grid of event photos */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { src: "/images/pptx_image57.jpeg", label: "Gian hàng hội chợ" },
+                { src: "/images/pptx_image53.jpeg", label: "Quan chức tham quan" },
+                { src: "/images/pptx_image15.jpeg", label: "Cà Phê INEXT – Trụ sở" },
+                { src: "/images/pptx_image19.jpeg", label: "Văn phòng TD Global" },
+              ].map((img) => (
+                <div key={img.src} className="rounded-xl overflow-hidden relative group" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
+                  <Image src={img.src} alt={img.label} width={350} height={220} className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105" unoptimized />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.75) 0%, transparent 60%)" }} />
+                  <p className="absolute bottom-2 left-2 right-2 text-xs font-bold text-white">{img.label}</p>
+                </div>
+              ))}
+            </div>
+            {/* Second row */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+              {[
+                { src: "/images/pptx_image58.jpeg", label: "Giao lưu tại hội chợ" },
+                { src: "/images/pptx_image56.jpeg", label: "Team tại triển lãm Bạc Liêu" },
+                { src: "/images/pptx_image4.png", label: "Mũi Cà Mau — Điểm kết nối" },
+              ].map((img) => (
+                <div key={img.src} className="rounded-xl overflow-hidden relative group" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
+                  <Image src={img.src} alt={img.label} width={450} height={280} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" unoptimized />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.7) 0%, transparent 60%)" }} />
+                  <p className="absolute bottom-2 left-2 right-2 text-xs font-bold text-white">{img.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FINAL CTA */}
         <section className="py-20 lg:py-28 relative overflow-hidden">
           <div

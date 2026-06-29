@@ -164,9 +164,14 @@ export default function ViecLamPage() {
               </div>
 
               <div className="space-y-4">
-                {/* Real job listing screenshot */}
-                <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(0,149,245,0.2)", boxShadow: "0 0 30px rgba(0,149,245,0.08)" }}>
-                  <Image src="/images/p11_img2.png" alt="Tin tuyển dụng thực tế trên Quét Quanh Đây" width={400} height={600} className="w-full object-cover object-top" style={{ maxHeight: "380px" }} />
+                {/* Real job listing screenshots */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(0,149,245,0.2)", boxShadow: "0 0 30px rgba(0,149,245,0.08)" }}>
+                    <Image src="/images/pptx_image43.png" alt="Tin tuyển dụng TD Global và INEXT GROUP" width={300} height={500} className="w-full object-cover object-top" unoptimized />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(255,179,0,0.2)", boxShadow: "0 0 30px rgba(255,179,0,0.08)" }}>
+                    <Image src="/images/pptx_image44.png" alt="Chi tiết tin tuyển dụng Trưởng Phòng" width={300} height={500} className="w-full object-cover object-top" unoptimized />
+                  </div>
                 </div>
                 <div className="rounded-2xl p-5" style={{ background: "rgba(255,179,0,0.06)", border: "1px solid rgba(255,179,0,0.15)" }}>
                   <p className="text-xs font-bold mb-3" style={{ color: "#FFB300" }}>Ngành nghề phổ biến</p>

@@ -104,7 +104,7 @@ export default function BanDoDiaDiemPage() {
               <div className="relative flex gap-4 items-stretch">
                 <div className="absolute -inset-6 rounded-3xl" style={{ background: "rgba(0,149,245,0.06)", filter: "blur(50px)" }} />
                 <div className="relative rounded-2xl overflow-hidden flex-1" style={{ border: "1px solid rgba(0,149,245,0.2)", boxShadow: "0 0 40px rgba(0,149,245,0.12)" }}>
-                  <Image src="/images/map-platform.png" alt="Quét Quanh Đây bản đồ số Cà Mau" width={500} height={300} className="w-full h-full object-cover" />
+                  <Image src="/images/pptx_image32.png" alt="Quét Quanh Đây bản đồ số Cà Mau" width={700} height={420} className="w-full h-full object-cover" unoptimized />
                   <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(5,9,18,0.55) 0%, transparent 50%)" }} />
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                     <span className="px-2.5 py-1 rounded-full text-xs font-bold" style={{ background: "rgba(0,212,200,0.15)", border: "1px solid rgba(0,212,200,0.3)", color: "#00D4C8" }}>
@@ -116,7 +116,7 @@ export default function BanDoDiaDiemPage() {
                   </div>
                 </div>
                 <div className="relative w-36 shrink-0 rounded-2xl overflow-hidden" style={{ border: "1px solid rgba(0,149,245,0.15)", boxShadow: "0 0 24px rgba(0,149,245,0.1)" }}>
-                  <Image src="/images/p07_img4.png" alt="Giao diện app Quét Quanh Đây" width={144} height={256} className="w-full h-full object-cover object-top" />
+                  <Image src="/images/pptx_image29.png" alt="Giao diện app Quét Quanh Đây" width={144} height={256} className="w-full h-full object-cover object-top" unoptimized />
                 </div>
               </div>
             </div>
@@ -132,13 +132,15 @@ export default function BanDoDiaDiemPage() {
             </div>
             <div className="flex gap-4 justify-center items-end flex-wrap">
               {[
+                { src: "/images/pptx_image29.png", alt: "Trang chủ app Quét Quanh Đây" },
+                { src: "/images/pptx_image30.png", alt: "Danh mục địa điểm" },
                 { src: "/images/p07_img4.png", alt: "Tìm địa điểm theo bán kính" },
                 { src: "/images/p07_img3.png", alt: "Danh sách địa điểm quanh đây" },
                 { src: "/images/p07_img2.png", alt: "Chi tiết địa điểm và ưu đãi" },
               ].map((img) => (
-                <div key={img.src} className="w-44 rounded-2xl overflow-hidden shadow-2xl"
+                <div key={img.src} className="w-40 rounded-2xl overflow-hidden shadow-2xl"
                   style={{ border: "1px solid rgba(0,149,245,0.15)", boxShadow: "0 10px 40px rgba(0,0,0,0.4)" }}>
-                  <Image src={img.src} alt={img.alt} width={176} height={312} className="w-full object-cover object-top" />
+                  <Image src={img.src} alt={img.alt} width={160} height={284} className="w-full object-cover object-top" unoptimized />
                 </div>
               ))}
             </div>
@@ -266,6 +268,31 @@ export default function BanDoDiaDiemPage() {
                     <div className="text-xs" style={{ color: "rgba(232,238,255,0.5)" }}>{stat.label}</div>
                   </div>
                 ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* DOWNLOAD QR */}
+        <section className="py-16 relative" style={{ borderTop: "1px solid rgba(255,255,255,0.04)" }}>
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl font-black text-white mb-2">Tải ứng dụng ngay</h2>
+            <p className="mb-10 text-sm" style={{ color: "rgba(232,238,255,0.5)" }}>Quét mã QR bằng điện thoại để tải về — miễn phí hoàn toàn</p>
+            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+              <div className="flex flex-col items-center gap-3">
+                <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,149,245,0.2)" }}>
+                  <Image src="/images/pptx_image5.jpeg" alt="QR Tải App Android" width={180} height={180} className="w-44 h-44 object-cover" unoptimized />
+                </div>
+                <div className="flex items-center gap-2">
+                  <Image src="/images/pptx_image3.png" alt="Google Play" width={110} height={32} className="h-8 w-auto object-contain" unoptimized />
+                </div>
+                <span className="text-xs font-bold" style={{ color: "#0095F5" }}>Android</span>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                <div className="rounded-2xl overflow-hidden shadow-xl" style={{ border: "1px solid rgba(0,149,245,0.2)" }}>
+                  <Image src="/images/pptx_image6.jpeg" alt="QR Tải App iPhone" width={180} height={180} className="w-44 h-44 object-cover" unoptimized />
+                </div>
+                <span className="text-xs font-bold" style={{ color: "#0095F5" }}>iPhone / iOS</span>
               </div>
             </div>
           </div>
