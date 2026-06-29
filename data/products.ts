@@ -69,7 +69,7 @@ export const ecosystem = [
       "Số hóa toàn bộ tỉnh Cà Mau",
       "Cập nhật thời gian thực",
     ],
-    href: "/san-pham",
+    href: "/dich-vu/ban-do-dia-diem",
     color: "#0075C4",
   },
   {
@@ -84,7 +84,7 @@ export const ecosystem = [
       "Danh thiếp điện tử 1 chạm NFC không cài app",
       "Phù hợp cá nhân & hộ kinh doanh",
     ],
-    href: "/san-pham#the-vip",
+    href: "/dich-vu/the-vip",
     color: "#FFB300",
   },
   {
@@ -99,7 +99,7 @@ export const ecosystem = [
       "Ký gửi nhà đất, đăng đa kênh SĐT chính chủ",
       "Kết nối người mua — người bán",
     ],
-    href: "/san-pham#bat-dong-san",
+    href: "/dich-vu/bat-dong-san",
     color: "#0075C4",
   },
   {
@@ -114,7 +114,7 @@ export const ecosystem = [
       "Chuẩn SEO · Responsive · Tốc độ cao",
       "Bảo hành 12 tháng · Hỗ trợ tại Cà Mau",
     ],
-    href: "/san-pham#website",
+    href: "/dich-vu/thiet-ke-website",
     color: "#16A34A",
   },
   {
@@ -129,7 +129,7 @@ export const ecosystem = [
       "Tìm việc theo khu vực, ngành nghề, lương",
       "Phù hợp doanh nghiệp vừa & nhỏ địa phương",
     ],
-    href: "/san-pham#viec-lam",
+    href: "/dich-vu/viec-lam",
     color: "#0075C4",
   },
   {
@@ -144,7 +144,7 @@ export const ecosystem = [
       "Kết nối người lao động & đơn vị xuất khẩu",
       "Hỗ trợ hồ sơ, thủ tục tư vấn",
     ],
-    href: "/san-pham#du-hoc",
+    href: "/dich-vu/du-hoc",
     color: "#0075C4",
   },
 ];
